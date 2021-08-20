@@ -28,7 +28,7 @@ class Tides():
             if sunrise < tide_timestamp and tide_timestamp < sunset:
                 out.append(data)
             else:
-                print('Data point was not a during sun up hours.')
+                print('Data point was not during sun up hours.')
         return out
 
     def download_page(self, url):
